@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Home Page</title>
+</head>
+<style>
+	.container{
+		width: 450px;
+		background-color: azure;
+		margin:0 auto;
+		text-align: center;
+		padding:20px;
+		border: 2px solid red;
+	}
+	.link{
+		width: 110px;
+		background-color: rgb(64, 128, 128);
+		border-radius: 8px;
+		padding:10px;
+		margin-bottom: 10px;
+	}
+	.link a{
+		color: black;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+	}
+</style>
+<body>
+	<div class="container">
+		<div class="title">
+			<h1>Welcome to Home</h1>
+		</div>
+		<div class="link-container">
+			<div class="link">
+				<a th:href="@{/balance}">Check Balance</a>
+			</div>
+			<div class="link">
+				<a th:href="@{/offers}">Check Offer</a>
+			</div>
+			<div class="link">
+				<a th:href="@{/approveLoan}">Approve Loan</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
